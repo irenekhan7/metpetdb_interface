@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JSON DATA</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+				
+		<script type="text/javascript" language="javascript">
+		    $(document).ready(function() {
+		    	var xhr = new XMLHttpRequest();	  
+		    	var url_ = "http://54.164.222.32/api/v1/chemical_analysis/?format=json/";
+				xhr.open("GET",url_,false);	
+		    	xhr.setRequestHeader("Authorization", "ApiKey sibel@cs.rpi.edu:df4721e4a03138beabe6f7675d6c4e116dc2fa96");					
+				xhr.send();
+
+			} );
+		</script>
+	</head>
+	<body>
+	
+			
+	    <div id="stage" style="background-color:#00ff00;">
+	         DATA
+	    </div>
+		
+   </body>
+
+</html>

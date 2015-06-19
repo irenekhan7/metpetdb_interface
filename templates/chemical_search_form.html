@@ -186,29 +186,7 @@ $('#mineral-tree').jstree({ 'core' : {
  });
 
 
-//mineral tree on change
-$('#mineral-tree').on("changed.jstree", function () 
-{
-  var mids = $('#mineral-tree').jstree('get_selected', true);
-  //console.log(data.selected);
-  /*
-  document.getElementById("selected-minerals").innerHTML = "";
-  console.log(document.getElementById("selected-minerals").innerHTML );
-  var searchOptions = document.getElementById("search-options-minerals");
-  searchOptions.innerHTML = "";
-  if(mids.length > 0)
-   searchOptions.innerHTML = "<div class='summary-title'><h4>Minerals</h4><a onclick='clearMinerals()' class='clear-title'>Clear</a></div>";
-*/
-  for(var a = 0; a < mids.length; a++)
-  {
-   //console.log(mids[a]);
-   if(mids[a].original.mineral_id)
-   {
-    document.getElementById("selected-minerals").innerHTML += "<input name='minerals__in' type='hidden' value=" + mids[a].original.mineral_id + " >";   
-    //searchOptions.innerHTML += mids[a].id + ", ";
-   }
-  }
-});
+
 
 //Ajax call to update sample data
 var frm = $('#content');
@@ -436,7 +414,7 @@ function updateChemistry()
 {
  //Chemistry search options, selected chemistry minerals
  var searchOptions = document.getElementById("search-options-chemistry");
- var mids = $('#mineral-tree').jstree('get_selected', true);
+ //var mids = $('#mineral-tree').jstree('get_selected', true);
 
  //Clear search options summary
  searchOptions.innerHTML = "";
@@ -527,7 +505,6 @@ function updateChemistry()
 function clearChemistry()
 {
  $("#chemistry .chosen-select").val('').trigger("chosen:updated");
- $("#mineral-tree").jstree("deselect_all");
  document.getElementById("search-options-chemistry").innerHTML = "";
 }
 

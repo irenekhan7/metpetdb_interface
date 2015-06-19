@@ -7,7 +7,7 @@
 </head>
 <body class="container">
 
-
+<!-- <script src="/static/js/jquery-2.1.1.min.js"></script> -->
 
   <header>
     <h3 class="brand" id="page_title">MetPetDB: Database for Metamorphic Petrology</h3>
@@ -34,6 +34,8 @@
 Search Samples</a></li>
 <li><a id="chemistry-search" href="{{ url_for('search_chemistry') }}">
 Search Chemistry</a></li>
+<li><a id="samples" href="{{ url_for('search_test') }}">
+Search Test</a></li>
           <li><a id="samples" href="{{ url_for('samples') }}?fields=sample_id,number,subsample_count,chem_analyses_count,image_count,user,public_data,rock_type,rock_type__rock_type,collection_date,minerals__name">View Samples</a></li>
           <li><a id="chemical_analyses" href="{{ url_for('chemical_analyses') }}">View Chemical Analyses</a></li>
           <li><a id="about" href="#">About</a></li>

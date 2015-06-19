@@ -1,3 +1,13 @@
+#result-map-canvas
+{ 
+ height: 400px;
+ width: 100%;
+ border: 3px solid #C7C6C6;
+ border-radius: 5px;
+ margin: 0 35px 40px 0;
+
+}
+
 #mineral-and-or
 {
  float:left;
@@ -597,6 +607,58 @@ background-color: rgb(235, 235, 235);
 
 .sample_mineral {
     margin:100px;
+}
+
+@media(max-width: 480px)
+{
+ .chemistry-form 
+ {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  margin-bottom: 10px;
+ }
+
+ #chemistry .elementoxidelist
+ {
+  clear:left;
+  margin-top: 10px;
+ }
+
+ .elementoroxide
+ {
+  clear:left;
+ }
+
+ .remove
+ {
+  float: left;
+  clear: left;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+ }
+
+ .add
+ {
+  clear:left;
+  float: left;
+  margin-top: 0px;
+  margin-left: 0px;
+ }
+}
+
+
+@media(max-width: 720px)
+{
+ #search-options
+ {
+  width: 100%;
+ }
+ 
+ #search-summary
+ {
+  width: 100%;
+ }
 }
 
 @media (max-width: 1199px)

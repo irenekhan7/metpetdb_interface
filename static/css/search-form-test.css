@@ -1,0 +1,104 @@
+.panel-group .panel {
+   margin-bottom: 0;
+   overflow: visible !important; /*This is the issue*/
+   border-radius: 4px;
+}
+
+
+.submit-search
+{
+     background:none!important;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     border-bottom:1px solid #444; 
+     cursor: pointer;
+}
+
+
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #DDD;
+    -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 767px) {
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #DDD;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+
+.clearall
+{
+ 
+}
+
+.clear-selection
+{
+ float: right;
+ margin-top: -18px;
+}
+
+input[type=submit]
+{
+ text-align: center; 
+ float: right;
+ margin-top: -18px;
+ border-bottom: none;
+ color: #4291d7;
+}
+
+input[type=submit]:hover
+{
+ opacity: .9;
+ border-bottom: 1px solid #4291d7;
+}
+
+#search-options
+{
+ float: left !important;
+ width:40% !important;
+ overflow: hidden;
+}
+
+#search-summary
+{
+ float: left !important;
+ width:53% !important;
+ margin-left: 35px;
+}
+
+#map-canvas
+{
+ float: left !important;
+ width: 53%;
+}
+
+#results
+{
+ float: right !important;
+ width: 53% !important;
+ overflow: hidden;
+}
+
+#location
+{
+ margin-left: 0 !important;
+}
+
+#minerals
+{
+ margin-left: 40px;
+}
+
